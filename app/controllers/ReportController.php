@@ -646,7 +646,7 @@ class ReportController
                     "SELECT COUNT(*) FROM sales WHERE status='completed' AND whatsapp_enquiry_id IS NOT NULL AND DATE(created_at) >= :from AND DATE(created_at) <= :to",
                     $rangeParams
                 );
-            } else {
+            } elseif (Schema::columnExists('sales','sale_source')) {
                 // fallback: sales with source whatsapp
                 $converted = (int) Database::fetchValue(
                     "SELECT COUNT(*) FROM sales WHERE status='completed' AND sale_source='whatsapp' AND {$rangeSql}",

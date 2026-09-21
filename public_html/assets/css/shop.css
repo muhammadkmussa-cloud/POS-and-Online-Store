@@ -41,6 +41,10 @@
 .shop-nav.nav-over-hero .nav-links a { color: #fff; }
 .shop-nav.nav-over-hero .nav-links a:hover { background: rgba(255,255,255,.14); color: #fff; }
 .shop-nav.nav-over-hero .nav-links a.active { color: #fff; background: rgba(255,255,255,.18); }
+/* Brand logo: white knockout over the hero, color once scrolled/solid */
+.shop-nav .brand-logo-white { display: none; }
+.shop-nav.nav-over-hero:not(.is-scrolled) .brand-logo-color { display: none; }
+.shop-nav.nav-over-hero:not(.is-scrolled) .brand-logo-white { display: block; }
 .shop-nav.nav-over-hero .nav-toggle {
   background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.5);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);

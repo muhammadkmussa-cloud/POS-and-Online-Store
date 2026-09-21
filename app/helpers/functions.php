@@ -132,6 +132,34 @@ function brand_mark(int $size = 32): string
         . '</svg>';
 }
 
+/**
+ * Full brand wordmark logo, sized by height (trimmed asset ratio 714:240 ≈ 2.975).
+ * Pass $white = true for the knockout variant used over dark/hero backgrounds.
+ */
+function brand_logo(int $height = 32, bool $white = false, string $class = ''): string
+{
+    $height = max(1, $height);
+    $width  = (int) round($height * (714 / 240));
+    $file   = $white ? 'khamis-logo-white.png' : 'khamis-logo.png';
+    $cls    = trim('brand-logo ' . ($white ? 'brand-logo-white' : 'brand-logo-color') . ' ' . $class);
+    return '<img src="' . e(url('assets/img/' . $file)) . '" width="' . $width . '" height="' . $height
+        . '" alt="" class="' . e($cls) . '" decoding="async">';
+}
+
+/**
+ * Receipt logo (trimmed asset ratio 418:320 ≈ 1.306).
+ * Pass $black = true for the monochrome variant used on thermal (black-only) prints.
+ */
+function receipt_logo(int $height = 44, bool $black = false, string $class = ''): string
+{
+    $height = max(1, $height);
+    $width  = (int) round($height * (418 / 320));
+    $file   = $black ? 'khamis-receipt-logo-black.png' : 'khamis-receipt-logo.png';
+    $cls    = trim('receipt-logo ' . ($black ? 'receipt-logo-black' : 'receipt-logo-color') . ' ' . $class);
+    return '<img src="' . e(url('assets/img/' . $file)) . '" width="' . $width . '" height="' . $height
+        . '" alt="" class="' . e($cls) . '" decoding="async">';
+}
+
 /* ---------------------------------------------------------------------------
  * Product thumbnails (dependency-free, Apple-clean gradient tiles)
  * ------------------------------------------------------------------------ */

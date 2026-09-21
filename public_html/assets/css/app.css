@@ -141,6 +141,8 @@ main:focus { outline: none; }
 }
 .nav-brand { display: flex; align-items: center; gap: 9px; color: var(--text); font-weight: 750; font-size: 15px; white-space: nowrap; letter-spacing: -.01em; }
 .nav-brand svg { flex: 0 0 auto; }
+.nav-brand img { flex: 0 0 auto; }
+.auth-brand .brand-logo { display: block; margin: 0 auto; }
 .nav-links { display: flex; align-items: center; gap: 4px; flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
 .nav-links::-webkit-scrollbar { display: none; }
 .nav-links a {

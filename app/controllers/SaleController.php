@@ -409,7 +409,7 @@ class SaleController
     <button type="button" onclick="window.print()">Print</button>
   </div>
   <div class="center">
-    <h1 class="b"><?= e($shop) ?></h1>
+    <img src="<?= e(url('assets/img/khamis-receipt-logo-black.png')) ?>" alt="<?= e($shop) ?>" style="display:block;width:<?= $paper === '58' ? '24' : '32' ?>mm;max-width:100%;height:auto;margin:0 auto 2mm;">
     <?php if ($addr !== ''): ?><p class="sub"><?= e($addr) ?></p><?php endif; ?>
     <?php if ($phone !== ''): ?><p class="sub">Tel: <?= e($phone) ?></p><?php endif; ?>
   </div>

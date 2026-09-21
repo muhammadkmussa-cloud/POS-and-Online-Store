@@ -13,12 +13,13 @@ $address  = Setting::get('shop_address', '');
     <div class="receipt card">
         <div class="receipt-head">
             <div class="receipt-brand">
-                <?= brand_mark(30) ?>
+                <?= receipt_logo(44) ?>
+                <?php if ($address || $phone): ?>
                 <div>
-                    <strong><?= e($shopName) ?></strong>
                     <?php if ($address): ?><span><?= e($address) ?></span><?php endif; ?>
                     <?php if ($phone): ?><span><?= e($phone) ?></span><?php endif; ?>
                 </div>
+                <?php endif; ?>
             </div>
             <div class="receipt-title">TAX RECEIPT</div>
         </div>

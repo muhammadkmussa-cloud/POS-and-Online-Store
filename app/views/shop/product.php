@@ -293,7 +293,7 @@ $initialSku = $defaultVariant['sku'] ?? $product['sku'];
         updateWhatsappLink();
     }
     function escapeHtml(s){
-        return String(s).replace(/[&<>\"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]; });
+        return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; });
     }
     function buildMessage(){
         var shopName = product.shop_name || 'Khamis Computers';

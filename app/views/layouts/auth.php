@@ -13,8 +13,7 @@
 <main id="main-content" class="auth-wrap" tabindex="-1">
     <div class="auth-card">
         <div class="auth-brand">
-            <?= brand_mark(44) ?>
-            <h1><?= e(config('app.name')) ?></h1>
+            <?= brand_logo(64) ?>
             <p><?= e(config('app.tagline')) ?></p>
         </div>
         <?php include APP_PATH . '/views/partials/flash.php'; ?>

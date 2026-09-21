@@ -43,8 +43,8 @@ $waDisplay = $waNumber ? whatsapp_display_number($waNumber) : '';
 <header class="global-nav shop-nav<?= $isHomeHero ? ' nav-over-hero' : '' ?>">
     <div class="nav-inner">
         <a class="nav-brand" href="<?= e(url('shop')) ?>" aria-label="<?= e($shopName) ?> home">
-            <?= brand_mark(24) ?>
-            <span><?= e($shopName) ?></span>
+            <?= brand_logo(34, false) ?>
+            <?= brand_logo(34, true) ?>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="shop-navigation" aria-label="Open navigation">
             <span></span><span></span><span></span>
@@ -67,7 +67,7 @@ $waDisplay = $waNumber ? whatsapp_display_number($waNumber) : '';
                     <a class="btn btn-primary btn-sm whatsapp-nav-link" href="<?= e('https://wa.me/' . $waNumber . '?text=' . rawurlencode('Hello ' . $shopName . ', I would like to know more about your products.')) ?>" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
                         <span aria-hidden="true" class="wa-icon">💬</span> WhatsApp
                     </a>
-                <?php else: ?>
+                <?php elseif (trim((string) Setting::get('shop_phone', '')) !== ''): ?>
                     <a class="btn btn-outline btn-sm" href="tel:<?= e(preg_replace('/\s+/', '', Setting::get('shop_phone', ''))) ?>">Contact</a>
                 <?php endif; ?>
             <?php endif; ?>
@@ -86,7 +86,7 @@ $waDisplay = $waNumber ? whatsapp_display_number($waNumber) : '';
 <footer class="shop-footer">
     <div class="footer-inner">
         <div class="footer-brand">
-            <div class="nav-brand"><?= brand_mark(24) ?><strong><?= e($shopName) ?></strong></div>
+            <div class="nav-brand"><?= brand_logo(34) ?></div>
             <p><?= e(Setting::get('shop_tagline', 'Technology with local service and support.')) ?></p>
             <?php if ($whatsappEnabled && $waNumber !== ''): ?>
                 <p style="margin-top:12px"><a class="btn btn-outline btn-sm" href="<?= e('https://wa.me/' . $waNumber) ?>" target="_blank" rel="noopener">💬 Chat on WhatsApp</a></p>

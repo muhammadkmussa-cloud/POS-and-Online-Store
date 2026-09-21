@@ -13,8 +13,7 @@
 <header class="global-nav">
     <div class="nav-inner">
         <a class="nav-brand" href="<?= e(url('dashboard')) ?>" aria-label="<?= e(config('app.name')) ?> dashboard">
-            <?= brand_mark(24) ?>
-            <span><?= e(config('app.name')) ?></span>
+            <?= brand_logo(34) ?>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
             <span></span><span></span><span></span>
