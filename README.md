@@ -1,4 +1,4 @@
-# Khamis Computers — POS + Online Catalogue + WhatsApp Ordering
+# POS and Online Store — POS + Online Catalogue + WhatsApp Ordering
 
 https://github.com/user-attachments/assets/5819aa03-7ace-405b-b6fe-056944235392
 
