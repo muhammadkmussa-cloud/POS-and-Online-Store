@@ -1,5 +1,9 @@
 # Khamis Computers — POS + Online Catalogue + WhatsApp Ordering
 
+https://github.com/user-attachments/assets/5819aa03-7ace-405b-b6fe-056944235392
+
+![Khamis Computers — POS + Online Catalogue + WhatsApp Ordering project film](./pos-and-online-store-film-poster.webp)
+
 A **connected Point-of-Sale (POS) and online catalogue** for a computer & electronics retailer. The physical shop and the web catalogue read the **same inventory** in real time, and the POS keeps working **offline** when the internet drops (queue-and-sync).
 
 Built with **plain HTML, CSS & JavaScript** on the front end and **PHP + MySQL** on the back end, structured to deploy on **cPanel** with no build step.
@@ -242,3 +246,4 @@ Short:
 ## License
 
 MIT
+
