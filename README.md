@@ -2,7 +2,7 @@
 
 https://github.com/user-attachments/assets/5819aa03-7ace-405b-b6fe-056944235392
 
-![Khamis Computers — POS + Online Catalogue + WhatsApp Ordering project film](./pos-and-online-store-film-poster.webp)
+[![Khamis Computers — POS + Online Catalogue + WhatsApp Ordering project film](./pos-and-online-store-film-poster.webp)](https://github.com/user-attachments/assets/5819aa03-7ace-405b-b6fe-056944235392)
 
 A **connected Point-of-Sale (POS) and online catalogue** for a computer & electronics retailer. The physical shop and the web catalogue read the **same inventory** in real time, and the POS keeps working **offline** when the internet drops (queue-and-sync).
 
